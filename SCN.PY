@@ -1,5 +1,8 @@
 import sqlite3            
 import datetime
+from tkinter import *
+from PIL import ImageTk,Image
+
 
 #-------------------------------------------------------------------------------------
 #ESTABLECEMOS CONEXION CON BASE DE DATOS Y EJECUTAMOS COMANDOS
@@ -30,9 +33,12 @@ cursor.execute('''CREATE TABLE IF NOT EXISTS ventas (
                 )''')
 
 #-------------------------------------------------------------------------------------
+ventana = Tk()
+ventana.geometry()
+
+#-------------------------------------------------------------------------------------
 
 #SE DEFINEN VARIAS FUNCIONES CON UNA TAREA EN ESPECIFICA
-
 #SE DA LA BIENVENIDA
 
 def bienvenida():
